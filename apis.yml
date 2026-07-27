@@ -1,8 +1,26 @@
 aid: flowneuroscience
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/flowneuroscience.png
 name: Flowneuroscience
-description: Flowneuroscience is a company surfaced as a portfolio company of khosla-ventures and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: 'Flow Neuroscience is a Malmo, Sweden medtech company founded in 2016
+  by clinical psychologist Daniel Mansson and neuroscientist Erik Rehn. It develops
+  a medically approved, at-home transcranial direct current stimulation (tDCS) headset
+  paired with a behavioral-therapy smartphone app to treat major depressive disorder
+  without medication. Its Flow FL-100 device is CE-marked in the EU and UK and received
+  FDA approval (PMA P230024) as the first at-home tDCS treatment for depression, with
+  a US launch planned for September 2026. Flow is backed by Khosla Ventures and other
+  global investors. This is a consumer and clinical medical-device company; no public
+  developer API, OpenAPI, or developer portal was found during enrichment.'
 url: https://raw.githubusercontent.com/api-evangelist/flowneuroscience/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,9 +30,18 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Health
+- Healthcare
+- Medical Devices
+- Mental Health
+- Depression
+- Neuroscience
+- Neurotechnology
+- Digital Health
+- Medtech
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +49,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/flowneuroscience-domain-security.yml
 - type: Website
-  url: http://www.flowneuroscience.com/
+  url: https://www.flowneuroscience.us/
+- type: SignUp
+  url: https://www.flowneuroscience.us/patient-sign-up?hsLang=en-us
+- type: Login
+  url: https://hcp.flowneuroscience.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
